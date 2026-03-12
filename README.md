@@ -23,7 +23,8 @@ cd GaRLIO_Docker
 sudo docker build -t garlio:noetic .
 ./run_garlio.sh
 
-## Run
+## Build
+
 '''bash
 source ~/catkin_ws/devel/setup.bash
 roslaunch garlio ntu_loop2_mapping.launch
