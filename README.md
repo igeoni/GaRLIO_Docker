@@ -18,6 +18,12 @@ Docker environment for running GaRLIO on Ubuntu 20.04 / ROS Noetic.
 ## Build
 
 ```bash
-git clone https://github.com/YOUR_NAME/GaRLIO_Docker.git
+git clone https://github.com/igeoni/GaRLIO_Docker.git
 cd GaRLIO_Docker
-docker build -t garlio:noetic .
+sudo docker build -t garlio:noetic .
+./run_garlio.sh
+
+## Run
+'''bash
+source ~/catkin_ws/devel/setup.bash
+roslaunch garlio ntu_loop2_mapping.launch
